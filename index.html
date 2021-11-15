@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <title>Clay To-do List</title>
+  </head>
+  <body>
+    <header onload = "onload()">
+      <h1>TODO</h1>
+    </header>
+    <main class="main-container">
+      <div class="container-flex">
+        <div>
+          <div class="container-form">
+            <form action="">
+              <input
+                type="text"
+                name="todo"
+                id="todo"
+                placeholder="Digite uma tarefa..."
+              />
+              <input type="button" class="addNewToDo" value="Adicionar" />
+            </form>
+          </div>
+        </div>
+        <div class="container">
+          <div class="info-container">
+            <p><span class="unfinishedTasks">0</span> items left</p>
+            <p class="clear">Clear Completed</p> 
+            </div>
+            <div class="tasks">
+            </div>
+        </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="functions.js"></script>
+  <script src="script.js"></script>
+</html>
