@@ -1,6 +1,6 @@
 const allTasks = document.querySelector(".all");
 
-// Função para que checa se tarefa está feita ou não e estiliza de acordo
+// Função  que checa se tarefa está feita ou não e estiliza de acordo
 function check() {
   const checkBox = document.querySelectorAll(".checkBox");
   checkBox.forEach(checkBox => {
@@ -13,11 +13,11 @@ function check() {
     }
   });
 }
-// <label class="conteudo" for="conteudo" class="digitado">${tarefa}</label>
+
 // Função para criar lista de tarefas
 function makeList(tarefa, length, check) {
   document.querySelector(".tasks").innerHTML += `
-      <ul class="newTask taksStyle  "data-index="${length}">
+      <ul class="newTask taksStyle"data-index="${length}">
       <li class="tarefa">
         <input type="checkbox" class="checkBox" name="${length}" 
         data-id="${length}" ${check}/>
@@ -31,10 +31,9 @@ function makeList(tarefa, length, check) {
   setLocalStorage();
 }
 
-// Função para limpar tarefas do localStorage
+// Função para renumerar tarefas
 function resetaIndex() {
   myLeads.forEach((lead, index) => {
-    console.log(index);
     lead.index = index;
   });
 }

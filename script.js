@@ -67,6 +67,7 @@ tasks.forEach(tasks => {
   });
 });
 
+// Função para excluir todos as tarefas
 clearAll.addEventListener("click", () => {
   const ul = document.querySelectorAll("ul");
   myLeads = [];
