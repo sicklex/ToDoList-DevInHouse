@@ -68,13 +68,13 @@ tasks.forEach(tasks => {
 });
 
 clearAll.addEventListener("click", () => {
-  tasks.forEach(task => {
-    task.remove();
-  });
+  const ul = document.querySelectorAll("ul");
   myLeads = [];
   setLocalStorage();
-  count = 0;
-  unfinishedTasks.textContent = `${count}`;
+  ul.forEach(task => {
+    task.remove();
+  });
+  itensLeft();
 });
 
 // Função para carregar tarefas do localStorage
