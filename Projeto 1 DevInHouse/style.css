@@ -1,0 +1,151 @@
+body {
+  background-color: rgba(24, 24, 36, 255);
+  background-image: url(assets/bg-desktop-dark.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 50vh;
+}
+
+h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-top: 10%;
+  letter-spacing: 1rem;
+  text-align: center;
+}
+
+.container-flex {
+  min-width: 30%;
+  min-height: 70%;
+}
+
+.container {
+  border: 1px solid rgb(39, 39, 39);
+  border-radius: 5px;
+  margin-top: 10px;
+  min-height: 70%;
+  background-color: rgba(37, 39, 60, 255);
+  box-shadow: 10px 10px 40px 5px rgba(0, 0, 0, 0.5);
+}
+
+#todo {
+  padding: 12px 9px;
+  min-width: 90%;
+  background-color: rgba(37, 39, 60, 255);
+  border: 1px solid rgba(37, 39, 60, 255);
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+}
+.container-form {
+  min-width: 100%;
+  margin: 30px 0px;
+  box-shadow: 10px 10px 40px 5px rgba(0, 0, 0, 0.5);
+}
+
+#todo::placeholder {
+  padding: 0px 10px;
+  font-size: 1rem;
+  color: white;
+}
+
+#todo:focus {
+  outline: none;
+}
+
+.addNewToDo {
+  border: none;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  padding: 14px 10px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #000;
+  cursor: pointer;
+  position: fixed;
+  background-color: rgba(37, 39, 60, 255);
+  color: white;
+  right: 35%;
+  position: absolute;
+}
+
+.addNewToDo:hover {
+  background-color: black;
+  color: white;
+}
+
+.checkbox {
+  margin-left: 10px;
+}
+.delete-btn {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.newTask {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 10px 0px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tarefa {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.taksStyle {
+  font-size: 1.5rem;
+  color: white;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.clear:hover {
+  cursor: pointer;
+  color: red;
+  text-decoration: underline;
+}
+.fas {
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.fas:hover {
+  color: red;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
